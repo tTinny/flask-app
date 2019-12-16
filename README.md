@@ -14,21 +14,21 @@ Run a container from the Docker Image using a port
 
 Checking the application is working
 
-  open http://localhost:5000
+    open http://localhost:5000
   
-  open http://localhost:5000/result  OR
+    open http://localhost:5000/result  OR
   
-  curl http://localhost:5000
+    curl http://localhost:5000
   
-  curl http://localhost:5000/result
+    curl http://localhost:5000/result
 
 Verify container logs with docker logs
 
-  docker logs flask_app
+    docker logs flask_app
 
 Stop and remove the local container
 
-  docker stop flask_app && docker rm flask_app
+    docker stop flask_app && docker rm flask_app
 
 
 
@@ -38,22 +38,27 @@ Deploying to Kubernetes
 
 Creating a deployment using kubectl
 
-   kubectl apply -f f-pod.yml
+    kubectl apply -f f-pod.yml
 
 Exposing a service
 
-  kubectl expose -f flask-svc.yml --type=NodePort
+    kubectl expose -f flask-svc.yml --type=NodePort
+Confirm the deployment and service are working properly
+
+     kubectl get pods
+     
+     kubectl get svc
 
 Verify container logs with kubectl logs
 
-  kubectl logs flask_app
+    kubectl logs flask_app
 
 Checking the application is working
 
-  open http://localhost:5000
+    open http://localhost:5000
   
-  open http://localhost:5000/result OR
+    open http://localhost:5000/result OR
   
-  curl http://localhost:5000
+    curl http://localhost:5000
   
-  curl http://localhost:5000/result
+    curl http://localhost:5000/result
