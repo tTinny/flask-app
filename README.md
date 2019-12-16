@@ -2,7 +2,7 @@ Working with Docker Images
 
 Downloading the file from docker hub.
 
-  docker pull praks1310/flask1:latest
+     docker pull praks1310/flask1:latest
 
 Run a container from the Docker Image using a port
 
