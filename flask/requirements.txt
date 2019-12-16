@@ -1,0 +1,4 @@
+Flask==0.10.1
+requests
+flask_restplus
+flask_sqlalchemy
