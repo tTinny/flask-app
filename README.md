@@ -15,11 +15,8 @@ Run a container from the Docker Image using a port
 Checking the application is working
 
     open http://localhost:5000
-  
     open http://localhost:5000/result  OR
-  
     curl http://localhost:5000
-  
     curl http://localhost:5000/result
 
 Verify container logs with docker logs
@@ -43,10 +40,10 @@ Creating a deployment using kubectl
 Exposing a service
 
     kubectl expose -f flask-svc.yml --type=NodePort
+
 Confirm the deployment and service are working properly
 
      kubectl get pods
-     
      kubectl get svc
 
 Verify container logs with kubectl logs
@@ -56,9 +53,6 @@ Verify container logs with kubectl logs
 Checking the application is working
 
     open http://localhost:5000
-  
     open http://localhost:5000/result OR
-  
     curl http://localhost:5000
-  
     curl http://localhost:5000/result
